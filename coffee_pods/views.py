@@ -11,4 +11,5 @@ class CoffeePodsListAPIView(ListAPIView):
     queryset = models.CoffeePods.objects.all()
     serializer_class = CoffeePodsSerializer
     filter_backends = (DjangoFilterBackend,)
+    # this is fields we will filter on
     filter_fields = ('flavors', 'pack_size')

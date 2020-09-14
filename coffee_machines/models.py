@@ -2,7 +2,7 @@ from django.db import models
 
 
 class CoffeeMachines(models.Model):
-
+    """Models class of the coffee machines"""
     COFFEE_MACHINE_SMALL = 'S'
     COFFEE_MACHINE_LARGE = 'L'
     ESPRESSO_MACHINE = 'E'

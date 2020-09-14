@@ -11,4 +11,5 @@ class CoffeeMachineListAPIView(ListAPIView):
     queryset = models.CoffeeMachines.objects.all()
     serializer_class = CoffeeMachinesSerializer
     filter_backends = (DjangoFilterBackend,)
+    # this is fields we will filter on
     filter_fields = ('machine_type', 'water_line_compatiple')

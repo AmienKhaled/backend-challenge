@@ -2,6 +2,7 @@ from django.db import models
 
 
 class CoffeePods(models.Model):
+    """Models class of the coffee pods"""
 
     COFFEE_POD_SMALL = 'S'
     COFFEE_POD_LARGE = 'L'
